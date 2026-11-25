@@ -43,7 +43,7 @@ MODULES = [
         "status": "live",
         "metrics": ["28.61% WAPE", "119.6M orders", "77 hubs"],
         "tags": ["Time Series", "LightGBM", "PyTorch LSTM", "Ridge"],
-        "url": "https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction/tree/main/DemandOps",
+        "url": "https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/",
     },
     {
         "icon": "🛵",
@@ -59,7 +59,7 @@ MODULES = [
         "status": "live",
         "metrics": ["9.97 min MAE", "88.2% P90 coverage", "192.7K deliveries"],
         "tags": ["Quantile Regression", "LightGBM", "Pinball Loss", "SHAP"],
-        "url": "https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction/tree/main/DeliveryOps",
+        "url": "https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/",
     },
     {
         "icon": "🍽️",
@@ -129,7 +129,7 @@ for col, (value, label) in zip(stat_cols, stat_values):
 # --------------------------------------------------------------------------
 # Module console grid
 # --------------------------------------------------------------------------
-theme.section("01", "Operational Modules", "Select a module to explore its source and Streamlit app on GitHub.")
+theme.section("01", "Operational Modules", "Select a console to open its live application in a new tab.")
 
 cols_per_row = 2
 rows = [MODULES[i : i + cols_per_row] for i in range(0, len(MODULES), cols_per_row)]
@@ -150,7 +150,7 @@ for row in rows:
             st.write("")
             if module["url"]:
                 st.link_button(
-                    f"View {module['name']} on GitHub →",
+                    f"Open {module['name']} Console →",
                     module["url"],
                     use_container_width=True,
                 )
