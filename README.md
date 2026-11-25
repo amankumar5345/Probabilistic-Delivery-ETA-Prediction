@@ -13,26 +13,23 @@
 
 Each module solves a high-impact operational decision problem using real-world or realistically simulated data, progressing from exploratory data analysis and simple baselines to stronger machine learning models and interactive dashboards.
 
-### 📊 DemandOps
+### 🔗 Repository & Streamlit Apps
 
-> 🚀 **Live Cloud Application**  
-> [https://foodops-demand.streamlit.app/](https://foodops-demand.streamlit.app/)
-
----
-
-### 🛵 DeliveryOps
-
-> 🚀 **Live Cloud Application**  
-> [https://foodops-delivery.streamlit.app/](https://foodops-delivery.streamlit.app/)
+> **GitHub Repository:** [https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction](https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction)
+>
+> Run locally:
+> - Root Console: `streamlit run streamlit_app.py`
+> - DemandOps: `streamlit run DemandOps/app/streamlit_app.py`
+> - DeliveryOps: `streamlit run DeliveryOps/app/streamlit_app.py`
 
 ---
 
 ## Module Status Overview
 
-| Module | Operational Domain | Primary Modeling Paradigm | Benchmark KPI | Status | Live Console / Documentation |
+| Module | Operational Domain | Primary Modeling Paradigm | Benchmark KPI | Status | Module / Documentation |
 | :--- | :--- | :--- | :---: | :---: | :--- |
-| **Module 1: DemandOps** | Weekly Fulfillment Demand Forecasting | LightGBM GBDT, PyTorch LSTM, Ridge | **28.61% WAPE** | 🟢 **Complete & Deployed** | [Live App](https://foodops-demand.streamlit.app/) · [DemandOps README](./DemandOps/README.md) |
-| **Module 2: DeliveryOps** | Real-Time Order Delivery ETA Prediction | LightGBM (L1 + Quantile / Pinball Loss), Ridge | MAE: **9.97 min** · P90 Coverage: **88.2%** | 🟢 **Complete & Deployed** | [Live App](https://foodops-delivery.streamlit.app/) · [DeliveryOps README](./DeliveryOps/README.md) |
+| **Module 1: DemandOps** | Weekly Fulfillment Demand Forecasting | LightGBM GBDT, PyTorch LSTM, Ridge | **28.61% WAPE** | 🟢 **Complete** | [DemandOps App](./DemandOps/app/streamlit_app.py) · [DemandOps README](./DemandOps/README.md) |
+| **Module 2: DeliveryOps** | Real-Time Order Delivery ETA Prediction | LightGBM (L1 + Quantile / Pinball Loss), Ridge | MAE: **9.97 min** · P90 Coverage: **88.2%** | 🟢 **Complete** | [DeliveryOps App](./DeliveryOps/app/streamlit_app.py) · [DeliveryOps README](./DeliveryOps/README.md) |
 | **Module 3: PersonalizeOps** | Implicit Feedback Dish & Restaurant Ranking | Matrix Factorization & Two-Tower Embeddings | NDCG@10 / Recall@10 | ⚪ Queued | [PersonalizeOps README](./PersonalizeOps/README.md) |
 | **Module 4: Experimentation** | A/B Test Harness & Causal Inference | Frequentist/Bayesian Testing, DiD, Matching | SRM / Uplift / Power | ⚪ Queued | [Experimentation README](./Experimentation/README.md) |
 
@@ -72,9 +69,9 @@ Each module:
 
 ## Module 1: DemandOps (Demand Forecasting)
 
-**Status:** 🟢 **Complete & Live Deployed**  
+**Status:** 🟢 **Complete**  
 **Detailed Documentation:** [`DemandOps/README.md`](./DemandOps/README.md)  
-**Interactive Live Console:** [https://foodops-demand.streamlit.app/](https://foodops-demand.streamlit.app/)
+**Streamlit App:** [`DemandOps/app/streamlit_app.py`](./DemandOps/app/streamlit_app.py) (`streamlit run DemandOps/app/streamlit_app.py`)
 
 ### Operational Problem
 Decentralized fulfillment centers face a severe tradeoff: over-predicting weekly dish demand leads to perishable food waste and cold-chain storage overload; under-predicting causes kitchen stockouts, canceled orders, and delayed deliveries. DemandOps forecasts weekly order volume (`num_orders`) for each `(center_id, meal_id)` combination across a decentralized fulfillment center network (77 hubs, 51 dishes, 3,597 active hub–dish pairs, 14 categories, 4 cuisines, ≈119.6M historical orders).
@@ -105,9 +102,9 @@ Decentralized fulfillment centers face a severe tradeoff: over-predicting weekly
 
 ## Module 2: DeliveryOps (ETA Prediction)
 
-**Status:** 🟢 **Complete & Live Deployed**  
+**Status:** 🟢 **Complete**  
 **Detailed Documentation / Folder:** [`DeliveryOps/README.md`](./DeliveryOps/README.md)  
-**Interactive Live Console:** [https://foodops-delivery.streamlit.app/](https://foodops-delivery.streamlit.app/)
+**Streamlit App:** [`DeliveryOps/app/streamlit_app.py`](./DeliveryOps/app/streamlit_app.py) (`streamlit run DeliveryOps/app/streamlit_app.py`)
 
 ### Operational Problem
 Predict total order delivery duration (order placed → customer doorstep) from the order, the store, the market, live dispatch load (on-shift, busy and outstanding dashers), the platform's drive-time estimate and the local time of day. DeliveryOps emphasizes uncertainty-aware promise windows: it predicts the P10, P50 and P90 so operations can show customers an expected time with an honest range, and it reports the coverage those ranges actually deliver. Scope: 192,730 cleaned orders across 6 markets and 6,725 stores, Jan 21 – Feb 17, 2015.

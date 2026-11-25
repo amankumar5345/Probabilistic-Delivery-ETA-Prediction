@@ -43,7 +43,7 @@ MODULES = [
         "status": "live",
         "metrics": ["28.61% WAPE", "119.6M orders", "77 hubs"],
         "tags": ["Time Series", "LightGBM", "PyTorch LSTM", "Ridge"],
-        "url": "https://foodops-demand.streamlit.app/",
+        "url": "https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction/tree/main/DemandOps",
     },
     {
         "icon": "🛵",
@@ -59,7 +59,7 @@ MODULES = [
         "status": "live",
         "metrics": ["9.97 min MAE", "88.2% P90 coverage", "192.7K deliveries"],
         "tags": ["Quantile Regression", "LightGBM", "Pinball Loss", "SHAP"],
-        "url": "https://foodops-delivery.streamlit.app/",
+        "url": "https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction/tree/main/DeliveryOps",
     },
     {
         "icon": "🍽️",
@@ -91,7 +91,7 @@ MODULES = [
     },
 ]
 
-GITHUB_URL = "https://github.com/iamnitishsah/FoodOps.AI"
+GITHUB_URL = "https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction"
 
 # --------------------------------------------------------------------------
 # Masthead
@@ -129,7 +129,7 @@ for col, (value, label) in zip(stat_cols, stat_values):
 # --------------------------------------------------------------------------
 # Module console grid
 # --------------------------------------------------------------------------
-theme.section("01", "Operational Modules", "Select a console to open its live application in a new tab.")
+theme.section("01", "Operational Modules", "Select a module to explore its source and Streamlit app on GitHub.")
 
 cols_per_row = 2
 rows = [MODULES[i : i + cols_per_row] for i in range(0, len(MODULES), cols_per_row)]
@@ -150,7 +150,7 @@ for row in rows:
             st.write("")
             if module["url"]:
                 st.link_button(
-                    f"Open {module['name']} Console →",
+                    f"View {module['name']} on GitHub →",
                     module["url"],
                     use_container_width=True,
                 )
@@ -192,5 +192,8 @@ for col, (step, name, label, status) in zip(roadmap_cols, roadmap):
 st.write("")
 st.divider()
 st.caption(
-    "Each module is deployed and versioned independently. This console only routes you to the right application."
+    "Repository: [amankumar5345/Probabilistic-Delivery-ETA-Prediction]"
+    "(https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction) · "
+    "Run each module locally with `streamlit run DemandOps/app/streamlit_app.py` "
+    "or `streamlit run DeliveryOps/app/streamlit_app.py`."
 )
