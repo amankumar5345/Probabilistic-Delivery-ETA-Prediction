@@ -43,7 +43,7 @@ MODULES = [
         "status": "live",
         "metrics": ["28.61% WAPE", "119.6M orders", "77 hubs"],
         "tags": ["Time Series", "LightGBM", "PyTorch LSTM", "Ridge"],
-        "url": "https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/",
+        "url": "https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/",
     },
     {
         "icon": "🛵",
@@ -59,7 +59,7 @@ MODULES = [
         "status": "live",
         "metrics": ["9.97 min MAE", "88.2% P90 coverage", "192.7K deliveries"],
         "tags": ["Quantile Regression", "LightGBM", "Pinball Loss", "SHAP"],
-        "url": "https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/",
+        "url": "https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/",
     },
     {
         "icon": "🍽️",

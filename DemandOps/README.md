@@ -1,18 +1,18 @@
 # DemandOps — Decentralized Fulfillment Demand Forecasting
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![LightGBM](https://img.shields.io/badge/model-LightGBM%20L1-brightgreen.svg)](https://lightgbm.readthedocs.io/)
 [![PyTorch](https://img.shields.io/badge/deep%20learning-PyTorch%20LSTM-orange.svg)](https://pytorch.org/)
 [![Validation WAPE](https://img.shields.io/badge/validation%20WAPE-28.61%25-success.svg)](#6-models--benchmark-scoreboard)
-[![Status](https://img.shields.io/badge/deployment-complete%20%26%20live-emerald.svg)](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
+[![Status](https://img.shields.io/badge/deployment-complete%20%26%20live-emerald.svg)](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-amankumar5345-black.svg?logo=github)](https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction)
 
 **DemandOps** is the demand-forecasting module of **FoodOps.AI**. It forecasts weekly order volume for every dish at every fulfillment hub, using 145 weeks of history across **77 hubs, 51 dishes and 3,597 active hub–dish pairs**, and serves the forecasts through an interactive planning dashboard.
 
 It is built for cloud-kitchen managers and supply-chain planners who need to decide **how much to prepare** for each dish: too much means spoiled ingredients and wasted labor, too little means stockouts and cancelled orders.
 
-> 🚀 **Live Application:** [https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
+> 🚀 **Live Application:** [https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
 
 ### At a Glance
 
@@ -238,7 +238,7 @@ Recent demand level and dish identity dominate. The promotion flags rank below t
 
 ## 8. Interactive Streamlit Dashboard
 
-> 🌐 **Live Cloud Deployment:** [https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
+> 🌐 **Live Cloud Deployment:** [https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
 
 Implemented in [`app/streamlit_app.py`](./app/streamlit_app.py) with a theme that adapts to light and dark mode. Run locally with `streamlit run DemandOps/app/streamlit_app.py`.
 

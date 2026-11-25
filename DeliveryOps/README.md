@@ -1,18 +1,18 @@
 # DeliveryOps — Real-Time Delivery ETA Prediction & Promise Windows
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![LightGBM](https://img.shields.io/badge/model-LightGBM%20Quantile-brightgreen.svg)](https://lightgbm.readthedocs.io/)
 [![Test MAE](https://img.shields.io/badge/test%20MAE-9.97%20min-success.svg)](#6-models--benchmark-scoreboard)
 [![P90 Coverage](https://img.shields.io/badge/P90%20coverage-88.2%25-orange.svg)](#6-models--benchmark-scoreboard)
-[![Status](https://img.shields.io/badge/deployment-complete%20%26%20live-emerald.svg)](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
+[![Status](https://img.shields.io/badge/deployment-complete%20%26%20live-emerald.svg)](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-amankumar5345-black.svg?logo=github)](https://github.com/amankumar5345/Probabilistic-Delivery-ETA-Prediction)
 
 **DeliveryOps** is the delivery-time module of **FoodOps.AI**. It predicts how long each order will take, from the moment it is placed to the customer's door, and returns an expected time (P50) together with an optimistic bound (P10) and a conservative bound (P90). It is trained on **192,730 cleaned deliveries across 6 markets and 6,725 stores** and serves the estimates through an interactive dashboard.
 
 It is built for dispatch and customer-experience teams who need to decide **what delivery time to show a customer**: promise too little and orders arrive late, promise too much and customers abandon the cart.
 
-> 🚀 **Live Application:** [https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
+> 🚀 **Live Application:** [https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
 
 ### At a Glance
 
@@ -344,7 +344,7 @@ By time, the 18:00 hour (18.7% of orders) has bias −3.73 and P90 coverage 86.1
 
 ## 8. Interactive Streamlit Dashboard
 
-> 🌐 **Live Cloud Deployment:** [https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/](https://probabilistic-delivery-eta-prediction-xedegczjt4pjxtshf78p8h.streamlit.app/)
+> 🌐 **Live Cloud Deployment:** [https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/](https://probabilistic-delivery-eta-prediction-cdhenbdmmqge4tmgzcswek.streamlit.app/)
 
 Implemented in [`app/streamlit_app.py`](./app/streamlit_app.py) with a theme that adapts to light and dark mode. Run locally with `streamlit run DeliveryOps/app/streamlit_app.py`.
 
